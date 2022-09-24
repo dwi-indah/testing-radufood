@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+		content="Radu Food sebagai perusahaan terbaik nasional dalam industri makanan & minuman yang halal untuk dikonsumsi.">
+	<meta name="content_tag" content="Radu Food KusKus Jeli" />
+	<meta name="content_tags"
+		content="KusKus Jeli, KusKus Jelly, Jeli Rasa Leci, Jeli Rasa Mangga, Kuskus Yoghurt, Ice Stick" />
+    <title>Radu Food</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <section class="wrapper container">
+            <a href="./index.html">
+                <div class="header-logo">
+                    <img src="assets/images/logo-radufood.png" alt="Logo Radufood">
+                </div>
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <nav class="navbar" id="navbar">
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="about-us.html" class="menu-link">About Us</a></li>
+                    <li class="menu-item"><a href="product.html" class="menu-link">Product</a></li>
+                    <li class="menu-item active"><a href="contact-us.html" class="menu-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <section class="hero">
+        <picture>
+            <source srcset="assets/images/bg-page.png" media="(min-width: 900px)" />
+            <img src="assets/images/bg-page-mobile.jpg" alt="KusKus Kesukaanku" />
+        </picture>
+    </section>
+
+    <main>
+        <div class="container content">
+            <section class="thankyou" data-aos="fade-in">
+                <h2>Terima Kasih!</h2>
+                <p>Pesan Anda akan direspon oleh tim terkait!</p>
+                <a href="index.html">Kembali ke Home</a>
+            </section>
+        </div>
+        <div class="link-wa d-flex align-items-center justify-content-center">
+            <a href="">
+                <img src="assets/images/logo-whatsapp.png" alt="Link WA">
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <div class="d-flex align-items-center gap-40">
+                <div class="footer-logo">
+                    <img src="assets/images/logo-radufood.png" alt="Radu Food">
+                </div>
+                <p class="text-gray">Copyright &copy; 2022 Radu Food</p>
+            </div>
+            <div class="mt-4 mt-md-0">
+                <p class="text-gray mb-2 mb-md-3"><span>Alamat :</span> Radu Food, Tangerang</p>
+                <div class="d-flex flex-column flex-md-row gap-20">
+                    <p class="text-gray"><i class="icon icon-email mr-2"></i> info@radufood.com</p>
+                    <p class="text-gray"><img src="assets/images/icon-wa.png" alt="" class="mr-2"></span> +6282123350217</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>

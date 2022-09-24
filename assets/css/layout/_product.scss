@@ -1,0 +1,89 @@
+.product {
+    &-fiture {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        &-item {
+            padding: 20px;
+            border: 0.5px solid #6C6C6C;
+            box-shadow: 4px 4px 8px rgba(55, 84, 170, 0.15);
+            border-radius: 12px;
+            color: $cl_black;
+            @media (max-width: 992px) {
+                padding: 16px;
+                height: 200px;
+            }
+        }
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+    &-brand {
+        height: 223px;
+        grid-column: 3;
+        @media (max-width: 992px) {
+            grid-column: inherit;
+            height: auto;
+            width: 150px;
+            justify-self: end;
+            margin-top: -50px;
+            margin-right: -16px;
+        }
+    }
+    &-list {
+        margin-top: 60px;
+        &-item {
+            border: 0.5px solid #6C6C6C;
+            box-shadow: 4px 4px 8px rgba(55, 84, 170, 0.15);
+            border-radius: 12px;
+            padding: 30px 20px;
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 20px;
+            cursor: pointer;
+            @media (max-width: 992px) {
+                grid-template-columns: 1fr;
+                padding: 20px 16px;
+            }
+        }
+        &-img {
+            border-radius: 8px;
+            // width: 140px;
+            height: 100%;
+            @media (max-width: 992px) {
+                width: 100%;
+                height: 180px;
+            }
+            &.-yoghurt img {
+                @media (max-width: 992px) {
+                    height: 150px;
+                }
+            }
+            img {
+                height: 140px;
+                width: auto;
+                @media (max-width: 992px) {
+                    height: 180px;
+                }
+            }
+        }
+        &-desc {
+            h4 {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

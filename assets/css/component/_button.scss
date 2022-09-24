@@ -1,0 +1,15 @@
+button, .button {
+    outline: none;
+    border: none;
+    padding: 12px 24px;
+    font-family: $font_read;
+    background: $cl_primary;
+    color: $cl_white;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: .3s ease;
+    &:hover {
+        color: $cl_white;
+        background: darken($cl_primary, 14%);
+    }
+}

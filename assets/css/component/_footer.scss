@@ -1,0 +1,28 @@
+.footer {
+    padding: 20px 0;
+    border-top: 1px solid $cl_grey;
+    @media (max-width: 992px) {
+        padding: 24px 8px;
+    }
+    &-logo {
+        width: 120px;
+        height: auto;
+        @media (max-width: 992px) {
+            width: 80px;
+        }
+        @media (max-width: 375px) {
+            width: 60px;
+        }
+        @media (max-width: 340px) {
+            width: 40px;
+        }
+    }
+    span {
+        font-family: $font_title;
+        font-size: 20px;
+        margin-right: 20px;
+        @media (max-width: 992px) {
+            margin: 0;
+        }
+    }
+}
